@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 NOV JS Class</title>
+</head>
+<body>
+    <h1 id="one">Hello</h1>
+
+    <button onclick="document.getElementById('one').innerHTML = 'Hey'"> Change</button>                               
+    <button onclick="document.getElementById('one').style.backgroundColor = 'red' ">BG Change</button>
+    <button onclick="document.getElementById('one').style.color = 'white'">FONT Color Change</button><br><br><br>
+
+    <button onclick="abc()">Print</button><br><br>
+    <button onclick="xyz()">S Print</button><br><br><br>
+
+    <input type="text" name="" id="v1"><br><br>
+    <input type="text" name="" id="v2">
+
+    <button onclick="div()" >Divide</button>
+
+
+    <script>
+
+        function div( ){
+            
+            let valueone = document.getElementById('v1').value
+            let valuetwo = document.getElementById('v2').value
+
+            console.log(valueone /  valuetwo)
+        }
+
+        function abc(){
+            console.log("hello world")
+        }
+        function xyz(){
+            console.log("Ibad Conquere")
+        }
+
+        var a = 10          //letter and value are change
+        var b = 10
+        var c = a + b
+        console.log(c)
+
+        let d = 20          //letter not change but value are change
+        let e = 20
+        let f = d + e
+        console.log(f)
+
+        const g = 30         //both not change
+        const h = 30
+        const i = g + h
+        console.log(i)
+    </script>
+</body>
+</html>
